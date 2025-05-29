@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --inter: "inter", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: var(--Off-Black);
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+img {
+  border-radius: 90px;
+  width: 90px;
+}
+main {
+  background-color: var(--Dark-Grey);
+    border-radius: 10px;
+  padding: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  /* responsible for enlarging the sides */
+}
+p {
+  font-size: 14px;
+  color: var(--White);
+  font-family: var(--inter);
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+h2 {
+  color: var(--White);
+  font-family: var(--inter);
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+h5 {
+  color: var(--Green);
+  font-family: var(--inter);
+  font-weight: 500;
+}
+button {
+  color: var(--White);
+  background-color: var(--Grey);
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: var(--inter);
+  font-size: 14px;
+  font-weight: 600;
+  width: 300px;
+  gap: 100px;
+  margin-bottom: 10px;
+
+  
+}
+ul {
+  list-style: none;
+}
+#buttons {
+  margin-top: 20px;
+  margin-bottom: 1px;
+}
+#sections {
+  margin-top: 20px;
+}
+
+#sections button:hover {
+  background-color: var(--Green);
+  color: var(--Dark-Grey);
+}
+@media (max-width: 1440px) {
+  main {
+    background-color: var(--Dark-Grey);
+    border-radius: 10px;
+    padding: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    background-color: var(--Dark-Grey);
+    border-radius: 100px;
+    padding: 1770px;
+    height: 100vh;
+  }
+}
+
